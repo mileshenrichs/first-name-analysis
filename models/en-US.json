@@ -1,0 +1,101 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "name analysis",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GiveNameIntent",
+                    "slots": [
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{Name} is my name",
+                        "my name's {Name}",
+                        "my name is {Name}",
+                        "{Name}"
+                    ]
+                },
+                {
+                    "name": "GiveGenderIntent",
+                    "slots": [
+                        {
+                            "name": "Gender",
+                            "type": "GENDER"
+                        }
+                    ],
+                    "samples": [
+                        "i am a {Gender}",
+                        "my gender is {Gender}",
+                        "i'm a {Gender}",
+                        "{Gender}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "i would not",
+                        "no thank you",
+                        "no thanks",
+                        "nope",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "i sure would",
+                        "yup",
+                        "yeah",
+                        "sure",
+                        "yes"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "GENDER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "female",
+                                "synonyms": [
+                                    "woman",
+                                    "girl"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "male",
+                                "synonyms": [
+                                    "man",
+                                    "guy",
+                                    "boy"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
